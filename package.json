@@ -119,6 +119,7 @@
     "stylelint-scss": "^3.3.2",
     "svg-inline-loader": "^0.8.0",
     "svg4everybody": "^2.1.9",
+    "swiper": "^4.5.0",
     "terser-webpack-plugin": "^1.1.0",
     "through2": "^2.0.4",
     "vinyl-buffer": "^1.0.1",
