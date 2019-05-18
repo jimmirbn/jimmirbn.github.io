@@ -9,7 +9,7 @@ src/
 gulp/
 setup/
 docs/
+.DS_Store
 
 # You probably don't want to check compiled service workers in either.
 sw.js
-
