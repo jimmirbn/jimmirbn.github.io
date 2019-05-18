@@ -619,13 +619,129 @@ button.swiper-pagination-bullet {
   -ms-perspective: 1200px;
 }
 
-.swiper-container {
-  height: 0;
-  overflow: hidden;
+body {
+  background-color: #ebeff0;
 }
 
-.swiper-container--active {
-  height: auto;
-  overflow: visible;
+.face-container {
+  max-width: 250px;
+  margin: auto;
+  display: block;
+  position: relative;
+}
+
+.face-container .gyro {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.face-container .face {
+  position: relative;
+}
+
+.face-container .eye {
+  height: 30px;
+  width: 30px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 65px;
+}
+
+.face-container .eye--left {
+  left: 52px;
+}
+
+.face-container .eye--right {
+  right: 55px;
+}
+
+.swiper-container {
+  opacity: 0;
+}
+
+.swiper-container.swiper-container-initialized {
+  opacity: 1;
+}
+
+.swiper-container .swiper-slide {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.swiper-container .swiper-slide.swiper-slide-active .question,
+.swiper-container .swiper-slide.swiper-slide-active form .input-answer {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.swiper-container .swiper-slide .question {
+  transition: opacity 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+  transition-delay: 100ms;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  opacity: 0;
+}
+
+.swiper-container .swiper-slide .question p {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+  color: #6b7480;
+  font-family: Helvetica, sans-serif;
+}
+
+.swiper-container .swiper-slide form .input-answer {
+  display: flex;
+  flex-direction: row;
+  transition: opacity 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+  transition-delay: 100ms;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  opacity: 0;
+}
+
+.swiper-container .swiper-slide form input {
+  border: 0;
+  background-color: white;
+  color: #6b7480;
+  letter-spacing: 1px;
+  font-weight: bold;
+  outline: none;
+  padding-left: 10px;
+  border-radius: 5px;
+  height: 50px;
+  width: 100%;
+}
+
+.swiper-container .swiper-slide form input::-moz-placeholder {
+  color: #6b7480;
+}
+
+.swiper-container .swiper-slide form input::-webkit-input-placeholder {
+  color: #6b7480;
+}
+
+.swiper-container .swiper-slide form input:-ms-input-placeholder {
+  color: #6b7480;
+}
+
+.swiper-container .swiper-slide form button {
+  outline: none;
+  border: 0;
+}
+
+.swiper-container .swiper-slide .swiper-content {
+  position: relative;
+  width: 100%;
+  padding: 20px 20px;
 }
 /*# sourceMappingURL=main.min.css.map */
