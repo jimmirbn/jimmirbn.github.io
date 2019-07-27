@@ -14,7 +14,10 @@
 
 
     <style type="text/css">
-        /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
+    .stop-container h2{
+        opacity: 0;
+    }
+   /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 
 /* Document
        ========================================================================== */
@@ -32,6 +35,7 @@ html {
   /* 2 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
+
 }
 
 /* Sections
@@ -557,103 +561,8 @@ html {
   -o-font-smoothing: antialiased;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-}
-
-.col {
-  flex: 0 0 100%;
-  max-width: 100%;
-  padding: 1.25rem;
-}
-
-.col--no-pad {
-  padding: 0;
-}
-
-.col--offset-xxs-1,
-.col--offset-xxs-2,
-.col--offset-xxs-3,
-.col--offset-xxs-4,
-.col--offset-xxs-5,
-.col--offset-xxs-6,
-.col--offset-xxs-7,
-.col--offset-xxs-8,
-.col--offset-xxs-9,
-.col--offset-xxs-10,
-.col--offset-xxs-11,
-.col--offset-xxs-12,
-.col--offset-xs-1,
-.col--offset-xs-2,
-.col--offset-xs-3,
-.col--offset-xs-4,
-.col--offset-xs-5,
-.col--offset-xs-6,
-.col--offset-xs-7,
-.col--offset-xs-8,
-.col--offset-xs-9,
-.col--offset-xs-10,
-.col--offset-xs-11,
-.col--offset-xs-12,
-.col--offset-sm-1,
-.col--offset-sm-2,
-.col--offset-sm-3,
-.col--offset-sm-4,
-.col--offset-sm-5,
-.col--offset-sm-6,
-.col--offset-sm-7,
-.col--offset-sm-8,
-.col--offset-sm-9,
-.col--offset-sm-10,
-.col--offset-sm-11,
-.col--offset-sm-12,
-.col--offset-md-1,
-.col--offset-md-2,
-.col--offset-md-3,
-.col--offset-md-4,
-.col--offset-md-5,
-.col--offset-md-6,
-.col--offset-md-7,
-.col--offset-md-8,
-.col--offset-md-9,
-.col--offset-md-10,
-.col--offset-md-11,
-.col--offset-md-12,
-.col--offset-lg-1,
-.col--offset-lg-2,
-.col--offset-lg-3,
-.col--offset-lg-4,
-.col--offset-lg-5,
-.col--offset-lg-6,
-.col--offset-lg-7,
-.col--offset-lg-8,
-.col--offset-lg-9,
-.col--offset-lg-10,
-.col--offset-lg-11,
-.col--offset-lg-12,
-.col--offset-xl-1,
-.col--offset-xl-2,
-.col--offset-xl-3,
-.col--offset-xl-4,
-.col--offset-xl-5,
-.col--offset-xl-6,
-.col--offset-xl-7,
-.col--offset-xl-8,
-.col--offset-xl-9,
-.col--offset-xl-10,
-.col--offset-xl-11,
-.col--offset-xl-12,
-.col--offset-xxl-1,
-.col--offset-xxl-2,
-.col--offset-xxl-3,
-.col--offset-xxl-4,
-.col--offset-xxl-5,
-.col--offset-xxl-6,
-.col--offset-xxl-7,
-.col--offset-xxl-8,
-.col--offset-xxl-9,
-.col--offset-xxl-10,
-.col--offset-xxl-11,
-.col--offset-xxl-12 {
-  margin-left: 0;
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 0.5px;
 }
 
 .hidden {
@@ -685,8 +594,6 @@ html {
 .clearfix::after {
   clear: both;
 }
-
-}
 /*# sourceMappingURL=critical.min.css.map */
 
     </style>
@@ -702,204 +609,216 @@ html {
 <body>
 
 <main>
-    <div class="face-container">
-        <span class="eye eye--left"></span>
-        <span class="eye eye--right"></span>
-        <img class="face" src="./static/dist/img/face.png" alt="face">
-        <div class="gyro"></div>
-    </div>
     <!-- STOP 1 -->
-    <div class="swiper-container swiper-container--1" data-latlng="55.671898,12.557803">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="swiper-content">
-                    <div class="question">
-                        <p>Landet hvor der ingen stole er...</p>
-                    </div>
-                    <form data-id="1" data-answer="england">
-                        <div class="input-answer">
-                            <input class="input-1" type="text">
+    <div class="stop-container stop-container--1">
+        <h2>STOP 1</h2>
+        <div class="swiper-container" data-latlng="55.671898,12.557803">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper-content">
+                        <div class="question">
+                            <p>Landet hvor der ingen stole er...</p>
                         </div>
-                        <button data-id="1" data-answer="england" type="submit">Go</button>
-                    </form>
+                        <form data-id="1" data-answer="england">
+                            <div class="input-answer">
+                                <input class="input-1" type="text">
+                            </div>
+                            <!-- <button data-id="1" data-answer="england" type="submit">Go</button> -->
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="swiper-content">
-                    <div class="question">
-                        <p>Hvilken ræv vinder altid?</p>
-                    </div>
-                    <form data-id="2" data-answer="ildræven,ild ræven">
-                        <div class="input-answer">
-                            <input class="input-2" type="text">
+                <div class="swiper-slide">
+                    <div class="swiper-content">
+                        <div class="question">
+                            <p>Hvilken ræv vinder altid?</p>
                         </div>
-                        <button data-id="2" data-answer="ildræven,ild ræven" type="submit">Go</button>
-                    </form>
+                        <form data-id="2" data-answer="ildræven,ild ræven">
+                            <div class="input-answer">
+                                <input class="input-2" type="text">
+                            </div>
+                            <!-- <button data-id="2" data-answer="ildræven,ild ræven" type="submit">Go</button> -->
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="swiper-content">
-                    <div class="question">
-                        <p>Hvor skal cremen helt ud til?</p>
-                    </div>
-                    <form data-id="3" data-answer="bøffen">
-                        <div class="input-answer">
-                            <input class="input-3" type="text">
+                <div class="swiper-slide">
+                    <div class="swiper-content">
+                        <div class="question">
+                            <p>Hvor skal cremen helt ud til?</p>
                         </div>
-                        <button data-id="3" data-answer="bøffen" type="submit">Go</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- STOP 2 -->
-    <div class="swiper-container swiper-container--2" data-latlng="55.671898,12.557803">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="swiper-content">
-                    <div class="question">
-                        <p>Hvad er en aftale?</p>
+                        <form data-id="3" data-answer="bøffen">
+                            <div class="input-answer">
+                                <input class="input-3" type="text">
+                            </div>
+                            <!-- <button data-id="3" data-answer="bøffen" type="submit">Go</button> -->
+                        </form>
                     </div>
-                    <form data-id="1" data-answer="fast">
-                        <div class="input-answer">
-                            <input class="input-1" type="text">
-                        </div>
-                        <button data-id="1" data-answer="fast" type="submit">Go</button>
-                    </form>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="swiper-content">
-                    <div class="question">
-                        <p>Denne person antyder at i er i familie og er en god købmand</p>
-                    </div>
-                    <form data-id="2" data-answer="bro">
-                        <div class="input-answer">
-                            <input class="input-2" type="text">
-                        </div>
-                        <button data-id="2" data-answer="bro" type="submit">Go</button>
-                    </form>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="swiper-content">
-                    <div class="question">
-                        <p>Hvad er dårlige knæ fyldt med?</p>
-                    </div>
-                    <form data-id="3" data-answer="Faxe kondi,faxe-kondi,faxekondi">
-                        <div class="input-answer">
-                            <input class="input-3" type="text">
-                        </div>
-                        <button data-id="3" data-answer="Faxe kondi,faxe-kondi,faxekondi" type="submit">Go</button>
-                    </form>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- STOP 3 -->
-    <div class="swiper-container swiper-container--3" data-latlng="55.671898,12.557803">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="swiper-content">
-                    <div class="question">
-                        <p>Hvilken telefon har Nes?</p>
-                    </div>
-                    <form data-id="1" data-answer="smartphone,smart-phone,smart phone">
-                        <div class="input-answer">
-                            <input class="input-1" type="text">
+    <div class="stop-container stop-container--2">
+        <h2>STOP 2</h2>
+
+        <!-- STOP 2 -->
+        <div class="swiper-container" data-latlng="55.671898,12.557803">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper-content">
+                        <div class="question">
+                            <p>Hvad er en aftale?</p>
                         </div>
-                        <button data-id="1" data-answer="smartphone,smart-phone,smart phone" type="submit">Go</button>
-                    </form>
+                        <form data-id="1" data-answer="fast">
+                            <div class="input-answer">
+                                <input class="input-1" type="text">
+                            </div>
+                            <!-- <button data-id="1" data-answer="fast" type="submit">Go</button> -->
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="swiper-content">
-                    <div class="question">
-                        <p>Hvilken slags tær har Jimmi</p>
-                    </div>
-                    <form data-id="2" data-answer="morfar tær,morfartær">
-                        <div class="input-answer">
-                            <input class="input-2" type="text">
+                <div class="swiper-slide">
+                    <div class="swiper-content">
+                        <div class="question">
+                            <p>Denne person antyder at i er i familie og er en god købmand</p>
                         </div>
-                        <button data-id="2" data-answer="morfar tær,morfartær" type="submit">Go</button>
-                    </form>
+                        <form data-id="2" data-answer="bro">
+                            <div class="input-answer">
+                                <input class="input-2" type="text">
+                            </div>
+                            <!-- <button data-id="2" data-answer="bro" type="submit">Go</button> -->
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="swiper-content">
-                    <div class="question">
-                        <p>Hvilken verdensdele mangler Jimmi at besøge</p>
-                    </div>
-                    <form data-id="3" data-answer="Antarktis">
-                        <div class="input-answer">
-                            <input class="input-3" type="text">
+                <div class="swiper-slide">
+                    <div class="swiper-content">
+                        <div class="question">
+                            <p>Hvad er dårlige knæ fyldt med?</p>
                         </div>
-                        <button data-id="3" data-answer="Antarktis" type="submit">Go</button>
-                    </form>
+                        <form data-id="3" data-answer="Faxe kondi,faxe-kondi,faxekondi">
+                            <div class="input-answer">
+                                <input class="input-3" type="text">
+                            </div>
+                            <!-- <button data-id="3" data-answer="Faxe kondi,faxe-kondi,faxekondi" type="submit">Go</button> -->
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- STOP 4 -->
-    <div class="swiper-container swiper-container--4" data-latlng="55.671898,12.557803">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="swiper-content">
-                    <div class="question">
-                        <p>Hvad fik Jimmi 10 minutter efter han havde købt sin bil</p>
-                    </div>
-                    <form data-id="1" data-answer="fartbøde,fart bøde,bøde">
-                        <div class="input-answer">
-                            <input class="input-1" type="text">
+    <div class="stop-container stop-container--3">
+        <h2>STOP 3</h2>
+
+        <!-- STOP 3 -->
+        <div class="swiper-container" data-latlng="55.671898,12.557803">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper-content">
+                        <div class="question">
+                            <p>Hvilken telefon har Nes?</p>
                         </div>
-                        <button data-id="1" data-answer="fartbøde,fart bøde,bøde" type="submit">Go</button>
-                    </form>
+                        <form data-id="1" data-answer="smartphone,smart-phone,smart phone">
+                            <div class="input-answer">
+                                <input class="input-1" type="text">
+                            </div>
+                            <!-- <button data-id="1" data-answer="smartphone,smart-phone,smart phone" type="submit">Go</button> -->
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="swiper-content">
-                    <div class="question">
-                        <p>Hvilken genstand brugte Jimmi til at reparere sin udstødning</p>
-                    </div>
-                    <form data-id="2" data-answer="dåse,coladåse,øldåse">
-                        <div class="input-answer">
-                            <input class="input-2" type="text">
+                <div class="swiper-slide">
+                    <div class="swiper-content">
+                        <div class="question">
+                            <p>Hvilken slags tær har Jimmi</p>
                         </div>
-                        <button data-id="2" data-answer="dåse,coladåse,øldåse" type="submit">Go</button>
-                    </form>
+                        <form data-id="2" data-answer="morfar tær,morfartær">
+                            <div class="input-answer">
+                                <input class="input-2" type="text">
+                            </div>
+                            <!-- <button data-id="2" data-answer="morfar tær,morfartær" type="submit">Go</button> -->
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="swiper-content">
-                    <div class="question">
-                        <p>Expert Hillerød gav nogle gange interne gode aftaler - Hvad kaldte vi dem</p>
-                    </div>
-                    <form data-id="3" data-answer="Gentleman agreement,ga">
-                        <div class="input-answer">
-                            <input class="input-3" type="text">
+                <div class="swiper-slide">
+                    <div class="swiper-content">
+                        <div class="question">
+                            <p>Hvilken verdensdele mangler Jimmi at besøge</p>
                         </div>
-                        <button data-id="3" data-answer="Gentleman agreement,ga" type="submit">Go</button>
-                    </form>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="swiper-content">
-                    <div class="question">
-                        <p>Nævn slogan til denne læskedrik</p>
+                        <form data-id="3" data-answer="Antarktis">
+                            <div class="input-answer">
+                                <input class="input-3" type="text">
+                            </div>
+                            <!-- <button data-id="3" data-answer="Antarktis" type="submit">Go</button> -->
+                        </form>
                     </div>
-                    <form data-id="4" data-answer="we rape gators">
-                        <div class="input-answer">
-                            <input class="input-4" type="text">
-                        </div>
-                        <button data-id="4" data-answer="we rape gators" type="submit">Go</button>
-                    </form>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="stop-container stop-container--4">
+        <h2>STOP 4</h2>
+
+        <!-- STOP 4 -->
+        <div class="swiper-container" data-latlng="55.671898,12.557803">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper-content">
+                        <div class="question">
+                            <p>Hvad fik Jimmi 10 minutter efter han havde købt sin bil</p>
+                        </div>
+                        <form data-id="1" data-answer="fartbøde,fart bøde,bøde">
+                            <div class="input-answer">
+                                <input class="input-1" type="text">
+                            </div>
+                            <!-- <button data-id="1" data-answer="fartbøde,fart bøde,bøde" type="submit">Go</button> -->
+                        </form>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-content">
+                        <div class="question">
+                            <p>Hvilken genstand brugte Jimmi til at reparere sin udstødning</p>
+                        </div>
+                        <form data-id="2" data-answer="dåse,coladåse,øldåse">
+                            <div class="input-answer">
+                                <input class="input-2" type="text">
+                            </div>
+                            <!-- <button data-id="2" data-answer="dåse,coladåse,øldåse" type="submit">Go</button> -->
+                        </form>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-content">
+                        <div class="question">
+                            <p>Expert Hillerød gav nogle gange interne gode aftaler - Hvad kaldte vi dem</p>
+                        </div>
+                        <form data-id="3" data-answer="Gentleman agreement,ga">
+                            <div class="input-answer">
+                                <input class="input-3" type="text">
+                            </div>
+                            <!-- <button data-id="3" data-answer="Gentleman agreement,ga" type="submit">Go</button> -->
+                        </form>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-content">
+                        <div class="question">
+                            <p>Nævn slogan til denne læskedrik</p>
+                        </div>
+                        <form data-id="4" data-answer="we rape gators">
+                            <div class="input-answer">
+                                <input class="input-4" type="text">
+                            </div>
+                            <!-- <button data-id="4" data-answer="we rape gators" type="submit">Go</button> -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="nextQuestion">Næste</button>
+    <div class="swiper-pagination"></div>
 </main>
 
 <script>
