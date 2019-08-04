@@ -904,12 +904,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: transparent;
 }
 
 .modal__wrapper.modal__wrapper--img-modal .modal__header {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.modal__wrapper.modal__wrapper--img-modal .modal__header .modal__close:before,
+.modal__wrapper.modal__wrapper--img-modal .modal__header .modal__close:after {
+  background-color: #ffffff;
 }
 
 .modal__wrapper.modal__wrapper--img-modal img {
@@ -951,5 +957,16 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#499dff', endColorstr='#8349fb', GradientType=1);
   padding: 10px 15px;
   border-radius: 7px;
+}
+
+body#progress {
+  background: black;
+}
+
+.progress__item {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
 }
 /*# sourceMappingURL=main.min.css.map */
