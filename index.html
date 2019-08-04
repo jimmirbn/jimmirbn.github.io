@@ -38,6 +38,10 @@ html {
 
 }
 
+img {
+    display: none;
+}
+
 /* Sections
        ========================================================================== */
 
@@ -619,7 +623,7 @@ html {
                         <div class="question">
                             <p>Hvilken ræv vinder altid?</p>
                         </div>
-                        <form data-id="1" data-answer="ildræven,ild ræven" data-tip="Spørg Bjørn">
+                        <form data-id="1" data-answer="ildræven|ild ræven" data-tip="Xbox">
                             <div class="input-answer">
                                 <input type="text">
                             </div>
@@ -631,7 +635,7 @@ html {
                         <div class="question">
                             <p>Hvor skal cremen helt ud til?</p>
                         </div>
-                        <form data-id="2" data-answer="bøffen,til bøffen" data-tip="Mamas corner">
+                        <form data-id="2" data-answer="bøffen|til bøffen|ud til bøffen" data-tip="Mamas corner">
                             <div class="input-answer">
                                 <input type="text">
                             </div>
@@ -653,12 +657,12 @@ html {
                 <div class="swiper-slide">
                     <div class="swiper-content">
                         <div class="question">
-                            <p>Hvad år er dette billede fra?</p>
+                            <p>Hvilket år er dette billede taget?</p>
                             <div class="ratio-16-9">
                                 <img src="./static/dist/img/stop1-billede.jpg" alt="danger zone">
                             </div>
                         </div>
-                        <form data-id="4" data-answer="2006" data-tip="Danger zone!">
+                        <form data-id="4" data-answer="2006" data-tip="Øl var kun på flaske">
                             <div class="input-answer">
                                 <input type="text">
                             </div>
@@ -680,7 +684,7 @@ html {
                         <div class="question">
                             <p>Hvad er en aftale?</p>
                         </div>
-                        <form data-id="1" data-answer="fast,den er fast">
+                        <form data-id="1" data-answer="fast|den er fast" data-tip="Kong oscars gade">
                             <div class="input-answer">
                                 <input type="text">
                             </div>
@@ -692,19 +696,34 @@ html {
                         <div class="question">
                             <p>Denne person antyder at i er i familie og er en god købmand</p>
                         </div>
-                        <form data-id="2" data-answer="bro">
+                        <form data-id="2" data-answer="bro" data-tip="whatsapp">
                             <div class="input-answer">
                                 <input type="text">
                             </div>
                         </form>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <!-- <div class="swiper-slide">
                     <div class="swiper-content">
                         <div class="question">
                             <p>Hvad er dårlige knæ fyldt med?</p>
                         </div>
-                        <form data-id="3" data-answer="Faxe kondi,faxe-kondi,faxekondi">
+                        <form data-id="3" data-answer="Faxe kondi|faxe-kondi|faxekondi">
+                            <div class="input-answer">
+                                <input type="text">
+                            </div>
+                        </form>
+                    </div>
+                </div> -->
+                <div class="swiper-slide">
+                    <div class="swiper-content">
+                        <div class="question">
+                            <p>Hvad kaldte vi zonen bag vores telte i 2006?</p>
+                            <div class="ratio-16-9">
+                                <img src="./static/dist/img/dangerzone.jpg" alt="Roskilde test">
+                            </div>
+                        </div>
+                        <form data-id="3" data-answer="dangerzone|danger zone" data-tip="Jamiroquai har lavet en sang om dette">
                             <div class="input-answer">
                                 <input type="text">
                             </div>
@@ -726,7 +745,7 @@ html {
                         <div class="question">
                             <p>Hvilken telefon har Nes?</p>
                         </div>
-                        <form data-id="1" data-answer="smartphone,smart-phone,smart phone">
+                        <form data-id="1" data-answer="smartphone|smart-phone|smart phone" data-tip=">Både iPhone og Samsung er en...">
                             <div class="input-answer">
                                 <input type="text">
                             </div>
@@ -738,7 +757,7 @@ html {
                         <div class="question">
                             <p>Hvilken slags tær har Jimmi?</p>
                         </div>
-                        <form data-id="2" data-answer="morfar tær,morfartær">
+                        <form data-id="2" data-answer="morfar tær|morfartær" data-tip="Tror også Tiko har dem?">
                             <div class="input-answer">
                                 <input type="text">
                             </div>
@@ -750,7 +769,34 @@ html {
                         <div class="question">
                             <p>Hvilken verdensdele mangler Jimmi at besøge?</p>
                         </div>
-                        <form data-id="3" data-answer="Antarktis">
+                        <form data-id="3" data-answer="Antarktis" data-tip="Har altid godt kunne tænkte mig at komme til et rigtig koldt sted.">
+                            <div class="input-answer">
+                                <input type="text">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-content">
+                        <div class="question">
+                            <p>Hvad hedder "Dj gruppen" der har lavet remix af nummeret "A bar in Amsterdam"</p>
+                            <div class="ratio-16-9">
+                                <img class="video" data-videosrc="./static/dist/img/hey2.mp4" src="./static/dist/img/hey2.jpg" alt="hey">
+                            </div>
+                        </div>
+                        <form data-id="4" data-answer="Dj lort|lort|djlort|dj-lort" data-tip="Ikke mowgli men...">
+                            <div class="input-answer">
+                                <input type="text">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-content">
+                        <div class="question">
+                            <p>Hvad hedder kaldte de nummeret?</p>
+                        </div>
+                        <form data-id="5" data-answer="hey2|hey 2" data-tip="Det er jo det de synger... 2">
                             <div class="input-answer">
                                 <input type="text">
                             </div>
@@ -772,7 +818,7 @@ html {
                         <div class="question">
                             <p>Hvad fik Jimmi 10 minutter efter han havde købt sin bil?</p>
                         </div>
-                        <form data-id="1" data-answer="fartbøde,fart bøde,bøde">
+                        <form data-id="1" data-answer="fartbøde|fart bøde|bøde" data-tip="Spørg Christian eller Bjørn, de var der.">
                             <div class="input-answer">
                                 <input type="text">
                             </div>
@@ -784,7 +830,7 @@ html {
                         <div class="question">
                             <p>Hvilken genstand brugte Jimmi til at reparere sin udstødning?</p>
                         </div>
-                        <form data-id="2" data-answer="dåse,coladåse,øldåse">
+                        <form data-id="2" data-answer="dåse|coladåse|øldåse|en dåse|en øldåse|en coladåse" data-tip="Tror der var Pepsi max i den.">
                             <div class="input-answer">
                                 <input type="text">
                             </div>
@@ -796,7 +842,7 @@ html {
                         <div class="question">
                             <p>Expert Hillerød gav nogle gange interne gode aftaler - Hvad kaldte vi dem?</p>
                         </div>
-                        <form data-id="3" data-answer="Gentleman agreement,ga">
+                        <form data-id="3" data-answer="Gentleman agreement|Gentleman agreements|ga|gas" data-tip="Finn">
                             <div class="input-answer">
                                 <input type="text">
                             </div>
@@ -806,13 +852,23 @@ html {
                 <div class="swiper-slide">
                     <div class="swiper-content">
                         <div class="question">
-                            <p>Nævn slogan til denne læskedrik</p>
+                            <p>Nævn et slogan til denne læskedrik</p>
+                            <div class="ratio-16-9">
+                                <img src="./static/dist/img/gatorade.jpeg" alt="gator">
+                            </div>
                         </div>
-                        <form data-id="4" data-answer="we rape gators">
+                        <form data-id="4" data-answer="gatorade, we rape gators|we rape gators|gatorade we rape gators" data-tip="Voldtager alligators">
                             <div class="input-answer">
                                 <input type="text">
                             </div>
                         </form>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-content">
+                        <div class="question">
+                            <p>I er ved vejs ende - kom ind og få en øl med mig inden vi fortsætter :D</p>
+                        </div>
                     </div>
                 </div>
             </div>
