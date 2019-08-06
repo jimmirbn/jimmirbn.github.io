@@ -13,3 +13,4 @@ docs/
 
 # You probably don't want to check compiled service workers in either.
 sw.js
+.DS_Store
