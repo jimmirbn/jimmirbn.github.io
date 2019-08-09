@@ -1,0 +1,57 @@
+.modal__wrapper, .modal__background { -webkit-backface-visibility: hidden; backface-visibility: hidden; opacity: 0; pointer-events: none; will-change: opacity, transform; }
+
+.modal__wrapper--ready, .modal__background--ready { transition-duration: .4s; transition-property: opacity, -webkit-transform; transition-property: opacity, transform; transition-property: opacity, transform, -webkit-transform; transition-timing-function: ease-out; }
+
+.modal__wrapper--visible, .modal__background--visible { opacity: 1; pointer-events: auto; transition-timing-function: ease-out; }
+
+.modal__background { background: rgba(0, 0, 0, 0.8); bottom: -100px; position: fixed; top: -100px; width: 100%; }
+
+.modal__background--level0 { z-index: 500; }
+
+.modal__background--level1 { z-index: 501; }
+
+.modal__background--level2 { z-index: 502; }
+
+.modal__background--level3 { z-index: 503; }
+
+.modal__background--level4 { z-index: 504; }
+
+.modal__background--level5 { z-index: 505; }
+
+.modal__background--level6 { z-index: 506; }
+
+.modal__background--level7 { z-index: 507; }
+
+.modal__background--level8 { z-index: 508; }
+
+.modal__background--level9 { z-index: 509; }
+
+.modal__background--level10 { z-index: 510; }
+
+.modal__wrapper { background: #fff; left: 50%; position: fixed; top: 50%; -webkit-transform: translate(-50%, -20%); transform: translate(-50%, -20%); width: 90%; }
+
+.modal__wrapper--level0 { z-index: 501; }
+
+.modal__wrapper--level1 { z-index: 502; }
+
+.modal__wrapper--level2 { z-index: 503; }
+
+.modal__wrapper--level3 { z-index: 504; }
+
+.modal__wrapper--level4 { z-index: 505; }
+
+.modal__wrapper--level5 { z-index: 506; }
+
+.modal__wrapper--level6 { z-index: 507; }
+
+.modal__wrapper--level7 { z-index: 508; }
+
+.modal__wrapper--level8 { z-index: 509; }
+
+.modal__wrapper--level9 { z-index: 510; }
+
+.modal__wrapper--level10 { z-index: 511; }
+
+.modal__wrapper--visible { -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+
+.modal__close { /* // Maybe you can use this in your own project..? background: transparent; border: none; cursor: pointer; font-size: 3em; height: 1em; outline: none; pointer-events: auto; position: absolute; right: 0; top: 0; width: 1em; z-index: 1000; @include mq(sm) { right: 10px; top: 10px; } &::before, &::after { background: #000; content: ""; height: 6%; left: 50%; position: absolute; top: 50%; transform-origin: 50% 50%; width: 80%; } &::before { transform: translate(-50%, -50%) rotate(-45deg); } &::after { transform: translate(-50%, -50%) rotate(45deg); } &-label { @include visuallyhidden; } */ }
