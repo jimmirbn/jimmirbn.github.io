@@ -799,17 +799,14 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .stop-container h2 {
-  position: absolute;
-  top: 50px;
-  right: 0;
-  left: 0;
   color: #e2f4fe;
   text-align: center;
   transition: opacity 250ms ease-in;
+  margin: auto 0;
 }
 
 .swiper-ready .stop-container h2 {
@@ -823,6 +820,7 @@ main {
 .swiper-container {
   opacity: 0;
   height: auto;
+  margin-bottom: auto;
 }
 
 .swiper-container.swiper-container-initialized {
